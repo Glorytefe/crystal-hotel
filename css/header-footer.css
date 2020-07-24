@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --font-col1: #8F503F;
+    --bk-col:#261214;
+    --white-col:#fff;
+}
+p, h3, h2, span, h5 {
+    font-family: poppins;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/* navbar */
+header, nav{
+    background-color: var(--bk-col);
+}
+
+.navbar-brand img {
+    max-width: 60%;
+}
+nav {
+    position: fixed;
+    z-index: 5000;
+}
+.navbar-toggler {
+    outline: none;
+    border: none!important;
+}
+
+.nav-link{
+    color: var(--white-col)!important;
+    padding:1rem 2rem!important;
+    text-align: center;
+    font-family: poppins;
+}
+
+
+.navbar-toggler-icon{
+    background-color: var(--font-col1)!important;
+}
+/* footer */
+footer{
+    background-color: var(--bk-col);
+    color: var(--white-col);
+    padding: 3rem;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.foot-txt a{
+    text-decoration: none;
+    color: var(--white-col);
+}
+li{
+    font-size: 18px;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-top: 3rem;
+}
+.col-foot p{
+    width: 80%;
+}
+.foot-copy {
+    padding-top: 2rem;
+    display: flex;
+}
+.float-icon {
+    text-align: right;
+    margin-left: auto;
+}
+.float-icon a {
+    text-decoration: none;
+    color: var(--white-col);
+    font-size: 25px;
+}
+i {
+    padding-right: 1rem;
+    
+}
+@media screen and (max-width:767px) and (min-width:200px) {
+   
+   /* footer */
+   footer 
+   {
+       padding: 1rem;   
+   }
+   li, footer h2{
+       width: 100%;
+       font-size: 14px;
+       padding: 0;
+       margin: 0;
+      
+   }
+   .links, .quick{
+       text-align: left;
+       padding-left: 1rem;
+   }
+   .contact, .cont {
+       text-align: right;
+   }
+   .col-foot p {
+       text-align: justify;
+       width: 100%;
+       font-size: 12px;
+   }
+
+   .foot-copy, .lp {
+       text-align: center;
+       flex: none;
+       display: block;
+       padding-top: 1rem;
+       font-size: 10px;
+   }
+   .float-icon a{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+   }
+   .float-icon {
+       text-align: center;
+       padding: 1.5rem 0;
+   }
+   
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+    
+    /* footer */
+   footer 
+   {
+       padding: 1rem;
+
+       
+   }
+   li, footer h2{
+       width: 100%;
+      
+   }
+   .links, .quick{
+       text-align: left;
+       padding-left: 2rem;
+   }
+   .contact, .cont {
+       text-align: right;
+   }
+   .col-foot p {
+       text-align: justify;
+       width: 100%;
+   }
+   
+}
