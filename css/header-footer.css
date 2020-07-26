@@ -39,11 +39,49 @@ nav {
     padding:1rem 2rem!important;
     text-align: center;
     font-family: poppins;
+    position: relative;
+    z-index: 1;
+}
+
+.start-blog, .nav-item:nth-child(5):hover~.animation{
+    width: 100px;
+    right: 12px;
+    /* left: 0; */
+}
+.start-contact, .nav-item:nth-child(4):hover~.animation{
+    width: 100px;
+    right: 135px;
+    /* left: 0; */
+}
+.start-facilities, .nav-item:nth-child(3):hover~.animation{
+    width: 100px;
+    right: 272px;
+    /* left: 0; */
+}
+.start-rooms, .nav-item:nth-child(2):hover~.animation{
+    width: 100px;
+    right: 407px;
+    /* left: 0; */
+}
+.start-home, .nav-item:nth-child(1):hover~.animation{
+    width: 100px;
+    right: 535px;
+    /* left: 0; */
+}
+.navbar-toggler-icon{
+    background-color: var(--font-col1)!important;
 }
 
 
-.navbar-toggler-icon{
-    background-color: var(--font-col1)!important;
+.animation {
+    position: absolute;
+    height: 5px;
+    bottom: 12px;
+    z-index: 0;
+    background: var(--font-col1);
+    width: 100px;
+    border-radius: 8px;
+    transition: all  ease 0s;
 }
 /* footer */
 footer{
@@ -89,7 +127,9 @@ i {
     
 }
 @media screen and (max-width:767px) and (min-width:200px) {
-   
+   .animation{
+       display: none;
+   }
    /* footer */
    footer 
    {

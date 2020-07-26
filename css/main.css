@@ -94,6 +94,13 @@ body{
     text-align: justify;
   
 }
+
+.checked{
+    color: orange;
+    padding: 0;
+    margin: 0;
+}
+
 .img-cont11 img {
     max-width: 90%;
 }
@@ -180,7 +187,26 @@ body{
      width: 100%;
     }
 }
+@media screen and (width:812px){
+    .img11 {
+    
+     min-height: 95vh!important;
+     width: 100%;
+    }
+}
+@media screen and (width:823px){
+    .img11 {
+    
+     min-height: 90vh!important;
+     width: 100%;
+    }
+}
 @media screen and (max-width:767px) and (min-width:200px) {
+
+    p, span {
+        font-size: 0.8rem!important;
+        font-weight: normal;
+    }
     .sec1 {
         padding:5rem 2rem!important;
     }
@@ -195,6 +221,7 @@ body{
 
     .txt h3 {
         font-size: 18px;
+        padding: 0.1rem 0;
     }
     .txt p {
         font-size: 12px;
@@ -218,7 +245,12 @@ body{
     text-align: center;
     padding: 1rem 0;
    }
-    .txt-box1, .bookr, .text-cont{
+    .txt-box1, .text-cont{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .bookr{
         max-width: 100%;
         margin: 0;
     }

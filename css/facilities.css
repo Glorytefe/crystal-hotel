@@ -74,12 +74,17 @@ p {
         font-size: 1.4rem;
         font-weight: bold;
     }
+    p, span {
+        font-size: 0.8rem!important;
+        font-weight: normal;
+    }
     .cont1 {
         width: 100%;
     }
     /* sec2 */
     .cards {
         display: block;
+        padding: 20px;
     }
     .cards h2 {  
         padding-top: 10px;

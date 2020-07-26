@@ -19,10 +19,6 @@ h2, h3, h5 {
     font-weight: bold;
 }
 
-/* p, span {
-    font-size: 1.2rem;
-    font-weight: normal;
-} */
 body{
     padding: 0;
     margin: 0;
@@ -39,9 +35,13 @@ body{
 
 .txt1{
     color: var(--white-col);
-    padding-top: 10%;
+    /* padding-top: 10%; */
     letter-spacing: 1px;
     text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* section2 */
@@ -56,8 +56,11 @@ body{
     border: none!important;
     outline: none;
     background-color: transparent;
+    /* animation: bounce, 1s; */
     
 }
+
+
 .card-part{
     box-shadow: 10px 15px 13px -5px rgba(163, 162, 162, 0.9);
 }
@@ -95,51 +98,6 @@ body{
     margin-bottom: 3rem;
 }
 
-
-@media screen and (width:280px) {
-    .sec1 {
-        height: 20vh!important;
-        padding: 1rem;
-    }
-}
-
-@media screen and (min-width:360px) and (max-width:375px){
-    .sec1 {
-        height: 20vh!important;
-    }
-}
-
-
-@media screen and (min-width:411px) and (max-width:414px){
-    .sec1 {
-        height: 20vh!important;
-    }
-}
-
-@media screen and (width:653px){
-    .sec1 {
-        height: 60vh!important;
-    } 
-}
-
-@media screen and (width:768px){
-    .sec1 {
-        height: 20vh!important;
-    }
-    .txt1 h2 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (width:812px){
-    .sec1 {
-        height: 60vh!important;
-    }
-    .txt1 h2 {
-        font-size: 25px;
-    }
-}
-
 @media screen and (max-width:767px) and (min-width:200px){
 
     h2, h3, h5 {
@@ -148,14 +106,22 @@ body{
     }
     
     p, span {
-        font-size: 0.8rem!important;
+        /* font-size: 0.8rem!important; */
         font-weight: normal;
     }
-    .sec1 {
-        height: 40vh;
-    }
-   
+    .card-body {
+        max-width: 100%!important;
+        padding: 0.5rem;
+      }
+   .txt1 {
+       width: 100%;
+       padding: 0 0.5rem;
+       top: 35%;
+   }
     /* sectn2 */
+    .first p{
+        font-size: 1rem;
+    }
     .sec2{
         padding: 0;
     }
@@ -176,8 +142,8 @@ body{
 
 @media screen and (max-width:1024px) and (min-width:768px){
    
-    .sec1 {
-        height: 45vh;
+    .txt1 {
+        top: 35%;
     }
     .first p {
         font-size: 15px;
@@ -186,5 +152,19 @@ body{
     /* sectn2 */
     .card {
         max-width: 100%;
+    }
+}
+@media screen and (width:653px){
+    .txt1 {
+        top: 43%;
+    } 
+}
+@media screen and (width:280px) {
+    .first p {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .card-body {
+      padding: 2rem 0;
     }
 }
