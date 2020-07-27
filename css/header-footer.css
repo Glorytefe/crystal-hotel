@@ -43,29 +43,29 @@ nav {
     z-index: 1;
 }
 
-.start-blog, .nav-item:nth-child(5):hover~.animation{
+/* .start-blog, .nav-item:nth-child(5):hover~.animation{
     width: 100px;
     right: 12px;
-    /* left: 0; */
-}
+    left: 0;
+}  */
 .start-contact, .nav-item:nth-child(4):hover~.animation{
     width: 100px;
-    right: 135px;
+    right: 30px;
     /* left: 0; */
 }
 .start-facilities, .nav-item:nth-child(3):hover~.animation{
     width: 100px;
-    right: 272px;
+    right: 170px;
     /* left: 0; */
 }
 .start-rooms, .nav-item:nth-child(2):hover~.animation{
     width: 100px;
-    right: 407px;
+    right: 310px;
     /* left: 0; */
 }
 .start-home, .nav-item:nth-child(1):hover~.animation{
     width: 100px;
-    right: 535px;
+    right: 430px;
     /* left: 0; */
 }
 .navbar-toggler-icon{
@@ -81,7 +81,7 @@ nav {
     background: var(--font-col1);
     width: 100px;
     border-radius: 8px;
-    transition: all  ease 0s;
+    /* transition: all  ease 0s; */
 }
 /* footer */
 footer{
@@ -175,7 +175,9 @@ i {
 }
 
 @media screen and (max-width:1024px) and (min-width:768px){
-    
+    .animation{
+        display: none;
+    }
     /* footer */
    footer 
    {
